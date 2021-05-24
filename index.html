@@ -7,16 +7,23 @@
 </head>
 <body>
     <script>
+      function calculaMedia(notas){
+            let media = 0
+            for (let i = 0; i < notas.length; i++){
+                media += notas[i]
+            }
+            return (media / notas.length)
+        }
         
         function cadastrarNotas (){
-var nota1 = +prompt("Digite sua primeira nota")
-var nota2 = +prompt("Digite sua segunda nota")
-var nota3 = +prompt("Digite sua terceira nota")
-let lista =[]
-lista.push(nota1)
-lista.push(nota2)
-lista.push(nota3)
-return lista 
+            var nota1 = +prompt("Digite sua primeira nota")
+            var nota2 = +prompt("Digite sua segunda nota")
+            var nota3 = +prompt("Digite sua terceira nota")
+            let lista =[]
+            lista.push(nota1)
+            lista.push(nota2)
+            lista.push(nota3)
+            return lista 
 }
 
     </script>
