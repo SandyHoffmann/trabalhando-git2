@@ -7,6 +7,10 @@
 </head>
 <body>
     <script>
+        function mostraMedia(media) {
+            alert(media.toFixed(2))
+        }
+      
       function calculaMedia(notas){
             let media = 0
             for (let i = 0; i < notas.length; i++){
@@ -24,7 +28,9 @@
             lista.push(nota2)
             lista.push(nota3)
             return lista 
-}
+         }
+      
+        mostraMedia(calculaMedia(cadastrarNotas()))
 
     </script>
 </body>
